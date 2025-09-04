@@ -190,7 +190,6 @@ MIT License – see `LICENSE` for details.
 
 ## 📬 Contact
 
-Your Name  
-📧 email@example.com  
+Mohammad Munem
 🔗 [GitHub](https://github.com/mhmunem) | [LinkedIn](https://linkedin.com/in/mhmunem)
 
