@@ -1,10 +1,10 @@
-# 🏠 Housing Price Prediction with ZenML & MLflow
+# Housing Price Prediction with ZenML & MLflow
 
 This project implements a machine learning pipeline to predict housing prices using the **[Ames Housing Dataset](https://www.kaggle.com/datasets/shashanknecrothapa/ames-housing-dataset)**, orchestrated with **[ZenML](https://zenml.io/)** and tracked with **[MLflow](https://github.com/mlflow/mlflow)**. It includes data preprocessing, model training, evaluation and deployment in a reproducible and scalable way.
 
 ---
 
-## 🚀 Features
+## Features
 
 - **End-to-end ML Pipeline**: From data ingestion to model serving.
 - **Modular Design**: Clean separation of concerns using design patterns (Strategy, Factory, Template).
@@ -17,7 +17,7 @@ This project implements a machine learning pipeline to predict housing prices us
 
 ---
 
-## ⚙️ Technologies Used
+## Technologies Used
 
 - **Python** – Core programming
 - **Pandas, NumPy** – Data manipulation
@@ -29,7 +29,7 @@ This project implements a machine learning pipeline to predict housing prices us
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the Repository
 
@@ -45,7 +45,7 @@ Before proceeding, install **ZenML** globally:
 pip install zenml
 ```
 
-> 🔗 Installation Guide: [https://docs.zenml.io/getting-started/installation](https://docs.zenml.io/getting-started/installation)
+> Installation Guide: [https://docs.zenml.io/getting-started/installation](https://docs.zenml.io/getting-started/installation)
 
 ### 3. Create and Activate a Virtual Environment
 
@@ -66,7 +66,7 @@ pip install -r requirements.txt
 
 ---
 
-## ⚙️ Setup ZenML with MLflow
+## Setup ZenML with MLflow
 
 This project uses **MLflow** for experiment tracking and model deployment via **ZenML**.
 
@@ -95,7 +95,7 @@ zenml model-deployer register mlflow --flavor=mlflow
 zenml stack register local-mlflow-stack -a default -o default -d mlflow -e mlflow_tracker --set
 ```
 
-✅ You now have a fully functional ZenML stack with:
+You now have a fully functional ZenML stack with:
 - Experiment tracking via MLflow
 - Model deployment via MLflow
 - Artifacts stored locally
@@ -103,7 +103,7 @@ zenml stack register local-mlflow-stack -a default -o default -d mlflow -e mlflo
 > 💡 MLflow UI can be accessed with: `mlflow ui` after running the pipeline.
 
 
-## ▶️ Running the Pipelines
+## Running the Pipelines
 
 ### 1. Run the Training Pipeline
 
@@ -128,7 +128,7 @@ python run_deployment.py
 
 Deploys the trained model using MLflow. The model will be served locally (or containerized, depending on configuration).
 
-> ✅ Ensure MLflow integration is installed and stack is properly configured.
+> Ensure MLflow integration is installed and stack is properly configured.
 
 ### 3. Make Sample Predictions
 
@@ -142,7 +142,7 @@ Sends a sample input to the prediction service and prints the result.
 
 ---
 
-## 📊 Explore Experiments with MLflow
+## Explore Experiments with MLflow
 
 After running the pipeline, launch the MLflow UI to view runs, parameters, and metrics:
 
@@ -154,7 +154,7 @@ The file path will be displayed when you run the `run_pipeline.py` file
 
 ---
 
-## 📁 Project Structure (Summary)
+## Project Structure (Summary)
 
 ```
 ├── analysis/               # EDA scripts and notebooks
@@ -174,13 +174,13 @@ The file path will be displayed when you run the `run_pipeline.py` file
 ---
 
 
-## 📄 License
+## License
 
 MIT License – see `LICENSE` for details.
 
 ---
 
-## 🙌 Acknowledgments
+## Acknowledgments
 
 - Dataset: Dean De Cock, *Ames Housing Data*
 - Inspired by Kaggle House Prices competition
@@ -188,8 +188,8 @@ MIT License – see `LICENSE` for details.
 
 ---
 
-## 📬 Contact
+## Contact
 
 Mohammad Munem
-🔗 [GitHub](https://github.com/mhmunem) | [LinkedIn](https://linkedin.com/in/mhmunem)
+[GitHub](https://github.com/mhmunem) | [LinkedIn](https://linkedin.com/in/mhmunem)
 
